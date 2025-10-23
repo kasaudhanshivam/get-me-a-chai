@@ -166,7 +166,7 @@ const PaymentPage = ({ username }) => {
             </div>
             <div className="info py-20 flex flex-col items-center justify-center gap-2 mx-auto text-center">
                 <h1 className='font-bold pt-2'>@{username}</h1>
-                <p>Lets help {currentUser.name?currentUser.name:'null'} to get a chai!</p>
+                <p>Lets help <span className='text-pink-600 font-bold'>{currentUser.name?currentUser.name:'null'}</span> to get a chai!</p>
                 <p className='text-gray-400'>{payments.length} Payments . ₹{(payments.reduce((a, b) => a + b.amount, 0))/100} Raised</p>
             </div>
 
